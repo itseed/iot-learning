@@ -11,10 +11,10 @@ const hardwareId = 'abcd';
 var serviceAccount = require("./serviceAccountKey.json");
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://rental-box.firebaseio.com/"
+    databaseURL: "https://your-host.firebaseio.com/"
 });
 
-const LINE_TOKEN = 'f1m3i0lCsP41ZTmHNCYEkG6ESChbJr2UZvdOqAcGnbnHKb+/rdKnCtP+sseOW1Kmue8HOR2NzsP46rnrEqUR8DUggtwpueAoKn+7ZtF5F+hq2cj3gXOVggHEiY+P01T/fdYeMXdnqkyk6ySOCa3QwwdB04t89/1O/w1cDnyilFU=';
+const LINE_TOKEN = 'Your Token Key';
 const LINE_MESSAGING_API = 'https://api.line.me/v2/bot/message';
 const LINE_HEADER = {
     'Content-Type': 'application/json',
